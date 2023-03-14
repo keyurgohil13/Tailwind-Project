@@ -1,0 +1,54 @@
+.banner-bg {
+  background-image: url('../images/Main-Banner-1.jpg');
+  background-size: cover;
+}
+
+.music-video {
+  background-image: url('../images/Video.jpg');
+  background-size: cover;
+
+}
+
+.services .icon span::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+.services .icon:hover span::after {
+  animation: sonar-effect 1s ease-in-out .1s infinite;
+}
+
+.news {
+  background-image: url('../images/cms_parallax.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+.counter{
+  background-image: url('../images/counter_parallax.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+.swiper-wrapper{
+  transition-timing-function: linear;
+}
+@keyframes sonar-effect {
+  0% {
+    opacity: 0.3;
+  }
+
+  40% {
+    opacity: 0.5;
+    box-shadow: 0 0 0 5px #fff, 0 0 10px 10px #fff, 0 0 0 10px #fff;
+  }
+
+  100% {
+    box-shadow: 0 0 0 5px #e7602b, 0 0 10px 10px #e7602b, 0 0 0 10px #e7602b;
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
